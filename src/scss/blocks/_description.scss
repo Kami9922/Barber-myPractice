@@ -1,0 +1,79 @@
+.description__body {
+	display: grid;
+  grid-template-columns: 450px 1fr 1fr ;
+  grid-template-rows: 400px 300px;
+  position: relative;
+  margin-bottom: 75px;
+
+	background: url('../../img/description/opacity-light.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: 1000px;
+  
+  font-family: Comfortaa;
+}
+
+.description__text-part {
+  display: flex;
+  grid-column: 1/4;
+}
+
+.description__img {
+  grid-column: 1/4;
+  height: 700px;
+  border: 2px solid #000;
+  display: block;
+  filter:sepia(0.3);
+}
+
+.description__text {
+  padding-left: 30px ;
+}
+
+.description__text-part {
+  margin: 0 0 50px 0;
+}
+
+.description__top-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.description__bot-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  color: #9b5b11;
+  padding-bottom: 20px;
+  line-height: 1.6;
+}
+
+.description__main-text {
+  line-height: 1.6;
+}
+
+.description__items {
+  display: flex;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  align-items: center;
+  gap: 10px;
+}
+
+.description__item-img {
+  height: 70px;
+  width: 70px;
+  
+}
+
+.description__item {
+  flex-basis: 33%;
+  text-align: center;
+
+}
+
+.description__item-text {
+  font-weight: 700;
+  padding: 20px;
+}

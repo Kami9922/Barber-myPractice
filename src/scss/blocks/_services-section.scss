@@ -1,0 +1,117 @@
+.services__body {
+  margin-bottom: 75px;
+}
+
+.services__main-items {
+  display: flex;
+  gap: 0 40px;
+  justify-content: space-evenly;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.services__main-item {
+  display: flex;
+  justify-content: center;
+  font-family: Rex;
+  font-weight: 700;
+  flex-basis: 650px;
+  min-height: 300px;
+  position: relative;
+  border-radius: 5px;
+
+    &.hair{
+      background-image: url('../../img/services_from_barber/services11.jpg');
+      background-repeat: no-repeat;
+      background-position: top right -50px;
+    }
+    &.beard{
+      background-image: url('../../img/services_from_barber/services22.jpg');
+      background-repeat: no-repeat;
+    
+    }
+}
+
+.services__header {
+  // position: absolute;
+  // bottom: 0px;
+  text-transform: uppercase;
+  padding: 0px;
+}
+.services__main-item-text {
+  font-size: 1.75em;
+  color: #fff;
+}
+
+.services__subtitle {
+  color: #d6a354;
+  font-size: 2em;
+}
+
+strong {
+  font-size: 1.85em;
+}
+
+.services__items-banner {
+  position: absolute;
+  z-index: 5;
+  height: 200px;
+  width: 430px;
+  top: -100px;
+  left: 0px;
+}
+
+.services__box {
+  display: flex;
+  align-items: flex-end;
+  
+  gap: 0 70px;
+  padding: 25px;
+}
+
+.services__secondary-items{
+  font-family: Rex;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.services__secondary-item {
+  display: flex;
+  flex-direction: column ;
+  flex-basis: 23%;
+  max-width: 280px;
+  background-size: contain;
+
+    &.shave {
+      background-image: url('../../img/services_from_barber/icons/blade.svg');
+      background-repeat: no-repeat;
+      background-position: bottom right ;
+    }
+    &.razor {
+      background-image: url('../../img/services_from_barber/icons/razor.svg');
+      background-repeat: no-repeat;
+      background-position: bottom right ;
+    }
+    &.tattoo {
+      background-image: url('../../img/services_from_barber/icons/tattoo.svg');
+      background-repeat: no-repeat;
+      background-position: bottom right ;
+    }
+    &.spa {
+      background-image: url('../../img/services_from_barber/icons/spa.png');
+      background-repeat: no-repeat;
+      background-position: bottom right ;
+    }
+}
+
+.services__secondary-title {
+  font-size: 1.25em;
+  padding-bottom: 20px;
+}
+
+.services__secondary-button {
+  align-self: flex-end;
+}

@@ -1,0 +1,50 @@
+.cosmetic__inner {
+  margin-bottom: 75px;
+}
+
+.cosmetic__body {
+  position: relative;
+  background-image: url('../../img/cosmetic/background-cosmetic.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cosmetic__text {
+  max-width: 520px;
+  color: #fff;
+  padding: 75px 75px 25px 75px;
+  margin: 0 auto;
+}
+
+.cosmetic__text-title {
+  font-size: 2rem;
+  padding: 15px;
+}
+
+.cosmetic__text-subtitle {
+  font-size: 1.25rem;
+  padding: 15px;
+  color: #d6a354;
+}
+
+.cosmetic__text-main {
+  font-size: 1.15rem;
+  font-family: Comfortaa;
+  padding: 15px;
+}
+
+.cosmetic__img {
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+  width: 450px;
+}
+
+.cosmetic__buttonbox {
+  margin-bottom: 75px;
+}
