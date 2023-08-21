@@ -5,14 +5,13 @@
 .services__main-items {
   display: flex;
   gap: 0 40px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: relative;
   margin-bottom: 40px;
 }
 
 .services__main-item {
   display: flex;
-  justify-content: center;
   font-family: Rex;
   font-weight: 700;
   flex-basis: 650px;
@@ -36,8 +35,9 @@
   // position: absolute;
   // bottom: 0px;
   text-transform: uppercase;
-  padding: 0px;
+  width: 100%;
 }
+
 .services__main-item-text {
   font-size: 1.75em;
   color: #fff;
@@ -64,9 +64,9 @@ strong {
 .services__box {
   display: flex;
   align-items: flex-end;
-  
   gap: 0 70px;
   padding: 25px;
+  width: 100%;
 }
 
 .services__secondary-items{
@@ -75,20 +75,21 @@ strong {
   font-weight: bold;
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-bottom: 75px;
 }
 
 .services__secondary-item {
   display: flex;
+  position: relative;
   flex-direction: column ;
   flex-basis: 23%;
   max-width: 280px;
-  background-size: contain;
 
     &.shave {
       background-image: url('../../img/services_from_barber/icons/blade.svg');
       background-repeat: no-repeat;
-      background-position: bottom right ;
+      background-position: bottom right;
     }
     &.razor {
       background-image: url('../../img/services_from_barber/icons/razor.svg');
@@ -114,4 +115,93 @@ strong {
 
 .services__secondary-button {
   align-self: flex-end;
+  &.locked:after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-image: url(../../img/services_from_barber/icons/lock.svg);
+    background-repeat: no-repeat;
+    top: 0px;
+    right: 0px;
+  }
 }
+
+.services__item-tab {
+  display: flex;
+}
+
+.services__main-tab {
+  p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+}
+
+.services__tab-img {
+  width: 500px;
+  border-radius: 5px;
+}
+
+.services__tab-imges {
+  position: relative;
+}
+
+.services__tab-deco {
+  background-image: url(../../img/services_from_barber/razor.png);
+  background-repeat: no-repeat;
+  background-size: 600px 450px;
+  
+  width: 600px;
+  height: 450px;
+  position: absolute;
+  top: 350px;
+  left: -30px;
+}
+
+.services__tab-textpart {
+  padding:0 25px;
+}
+
+.services__tab-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #896322;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.services__tab-subtitle {
+  color: #d6a354;
+  line-height: 1.5;
+  font-weight: 700;
+  font-family: comfortaa;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+}
+
+.services__tab-text {
+  font-weight: 700;
+  line-height: 1.5;
+  font-family: comfortaa;
+}
+
+.services__tab-cost {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.services__tab-littletext {
+  color: #896322;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.services__tab-stages {
+  padding: 10px 15px 10px 15px;
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+

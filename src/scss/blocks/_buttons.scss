@@ -11,6 +11,7 @@
   line-height: 44px;
   font-weight: 700;
   font-size: .85em;
+  cursor: pointer;
 
     &.button-ghost:hover {
       background-color: #fff;
@@ -38,10 +39,19 @@
   background-color: transparent;
 }
 
+.button--active {
+  background-color: #000;
+  color: #fff;
+}
+
 .button-ghost--big {
   border-radius: 30px;
   line-height: 55px;
   min-width: 300px;
   background-color: #000;
   color: #fff;
+}
+
+.button-locked{
+  border: 2px solid #d6a354;
 }
