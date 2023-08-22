@@ -76,7 +76,7 @@ strong {
 
   display: flex;
   justify-content: space-between;
-  margin-bottom: 75px;
+  margin-bottom: 55px;
 }
 
 .services__secondary-item {
@@ -105,6 +105,7 @@ strong {
       background-image: url('../../img/services_from_barber/icons/spa.png');
       background-repeat: no-repeat;
       background-position: bottom right ;
+      background-size: contain ;
     }
 }
 
@@ -136,6 +137,9 @@ strong {
     margin-block-start: 1em;
     margin-block-end: 1em;
   }
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, .5);
 }
 
 .services__tab-img {
@@ -160,7 +164,8 @@ strong {
 }
 
 .services__tab-textpart {
-  padding:0 25px;
+  padding: 10px 25px;
+  
 }
 
 .services__tab-title {

@@ -2,10 +2,20 @@
 // mobileNav()
 import { init } from './modules/map.js'
 
-const tabsBtn = document.querySelectorAll('.button-tab')
+const tabBtns = document.querySelectorAll('[data-tab]')
+const contentBoxes = document.querySelectorAll('[data-tab-content')
 
-tabsBtn.forEach((item) => {
+tabBtns.forEach((item) => {
   item.addEventListener('click', function () {
-    console.log('click')
+    const contentBox = document.querySelector('#' + this.dataset.tab)
+
+    contentBoxes.forEach((item) => {
+      item.classList.add('none')
+    })
+    contentBox.classList.remove('none')
+    tabBtns.forEach((item) => {
+      item.classList.remove('button--active')
+    })
+    item.classList.add('button--active')
   })
 })

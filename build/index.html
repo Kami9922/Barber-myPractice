@@ -165,9 +165,9 @@
             </h3>
             <div class="services__secondary-button">
               <div
-                class="button button-ghost--light button-tab"
+                class="button button-ghost--light button--active"
                 href="#"
-                data-tab="#tab1"
+                data-tab="tab_1"
               >
                 услуги бритья
               </div>
@@ -180,11 +180,7 @@
               бритьё
             </h3>
             <div class="services__secondary-button">
-              <div
-                class="button button-ghost--light button-tab"
-                href="#"
-                data-tab="#tab2"
-              >
+              <div class="button button-ghost--light" href="#" data-tab="tab_2">
                 для ценителей
               </div>
             </div>
@@ -196,11 +192,7 @@
               татуировок
             </h3>
             <div class="services__secondary-button">
-              <div
-                class="button button-ghost--light button-tab"
-                href="#"
-                data-tab="#tab3"
-              >
+              <div class="button button-ghost--light" href="#" data-tab="tab_3">
                 Услуги тату салона
               </div>
             </div>
@@ -217,7 +209,7 @@
           </div>
         </div>
         <div class="services__main-tab">
-          <div class="services__item-tab none" id="tab1">
+          <div class="services__item-tab" data-tab-content id="tab_1">
             <img
               class="services__tab-img"
               src="../../img/services_from_barber/barbering2.jpg"
@@ -262,7 +254,7 @@
               </p>
             </div>
           </div>
-          <div class="services__item-tab none" id="tab2">
+          <div class="services__item-tab none" data-tab-content id="tab_2">
             <div class="services__tab-imges">
               <div class="services__tab-deco"></div>
               <img
@@ -333,7 +325,7 @@
               </p>
             </div>
           </div>
-          <div class="services__item-tab" id="tab3">
+          <div class="services__item-tab none" data-tab-content id="tab_3">
             <img
               class="services__tab-img"
               src="../../img/services_from_barber/tattoo.jpg"
@@ -345,7 +337,7 @@
               >
               <p class="services__tab-text">
                 Сколько стоит сделать татуировку? В среднем, сделать татуировку
-                в барбершопе OldBoy будет стоить от 2000 рублей. Но конечное
+                в барбершопе Barber будет стоить от 2000 рублей. Но конечное
                 значение цены на тату зависит от множеств факторов. Важно
                 учесть: размер, расцветку, стиль тату, направление, место для
                 нанесения
@@ -369,7 +361,7 @@
                 обращаетесь.
               </p>
               <p class="services__tab-text">
-                В сети барбершопов OldBoy имеются тату-салоны, где мастера
+                В сети барбершопов Barber имеются тату-салоны, где мастера
                 проходят через жесткую конкуренцию и строгий отбор по портфолио
                 и навыкам, затем, проходят обязательную сертификацию и
                 аттестацию. И только потом принимаются для работы в барбершоп.
@@ -515,6 +507,14 @@
 </footer>
 
     </div>
+
+    <a class="online">
+      <div class="online__container">
+        <span class="online__title">Онлайн Запись </span>
+        <span class="online__subtitle">Barber</span>
+      </div>
+      <div class="online__wave"></div>
+    </a>
 
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=59c3afb7-f00a-4a50-8605-3e5b9ffb3af3&lang=ru_RU"
