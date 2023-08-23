@@ -11,25 +11,67 @@
     <div class="wrapper">
       <header class="header">
   <div class="container">
-    <div class="menu">
-      <nav class="menu__nav">
-        <a href="#">
-          <img class="logo" src="../img/Logo.svg" alt="Logo" />
-        </a>
-        <ul class="menu__list">
-          <a href="#"><li class="menu__list-item">Главная</li></a>
-          <a href="#"><li class="menu__list-item">Услуги</li></a>
-          <a href="#"><li class="menu__list-item">Косметика</li></a>
-          <a href="#"><li class="menu__list-item">Вакансии</li></a>
-          <a href="#"><li class="menu__list-item">Контакты</li></a>
-        </ul>
-      </nav>
-      <div class="menu__reception">
-        <a class="button button-ghost--light button-ghost--big" href="#"
-          >Записаться онлайн</a
-        >
+    <div class="header__inner">
+      <div class="menu">
+        <nav class="menu__nav">
+          <a href="#">
+            <img class="logo" src="../img/Logo.svg" alt="Logo" />
+          </a>
+          <ul class="menu__list">
+            <a href="#"><li class="menu__list-item">Главная</li></a>
+            <a href="#"><li class="menu__list-item">Услуги</li></a>
+            <a href="#"><li class="menu__list-item">Косметика</li></a>
+            <a href="#"><li class="menu__list-item">Вакансии</li></a>
+            <a href="#"><li class="menu__list-item">Контакты</li></a>
+          </ul>
+        </nav>
+        <div class="menu__reception">
+          <div
+            class="button button-ghost--light button-ghost--big"
+            data-modal-button
+          >
+            Записаться онлайн
+          </div>
+        </div>
+        <div class="menu__border"></div>
       </div>
-      <div class="menu__border"></div>
+      <div class="fade-block none" data-fade></div>
+      <div class="modal none" data-modal>
+        <h2 class="modal__title">Оформление</h2>
+        <form class="modal__form" method="post">
+          <div class="modal__name modal-block">
+            <label class="modal__name-lab label" for="name">Имя:</label>
+            <input
+              class="modal__name-input input"
+              id="name"
+              placeholder="Введите имя"
+              type="text"
+            />
+          </div>
+          <div class="modal__phone">
+            <label class="modal__phone-lab label" for="phone">Телефон:</label>
+            <input
+              class="modal__phone-input input"
+              id="phone"
+              placeholder="Введите телефон"
+              type="tel"
+            />
+          </div>
+          <div class="modal__date">
+            <label class="modal__date-lab label" for="date"
+              >Желаемая дата:</label
+            >
+            <input class="modal__date-input input" id="date" type="date" />
+          </div>
+          <div class="modal__time">
+            <label class="modal__time-lab label" for="date"
+              >Желаемое время:</label
+            >
+            <input class="modal_time-input input" id="time" type="time" />
+          </div>
+          <div class="button button-ghost--modal">Записаться</div>
+        </form>
+      </div>
     </div>
   </div>
 </header>
@@ -508,13 +550,13 @@
 
     </div>
 
-    <a class="online">
+    <div class="online" data-modal-button>
       <div class="online__container">
         <span class="online__title">Онлайн Запись </span>
         <span class="online__subtitle">Barber</span>
       </div>
       <div class="online__wave"></div>
-    </a>
+    </div>
 
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=59c3afb7-f00a-4a50-8605-3e5b9ffb3af3&lang=ru_RU"

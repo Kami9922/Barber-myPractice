@@ -1,0 +1,98 @@
+
+.fade-block {
+  z-index: 90;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+}
+
+.modal {
+  z-index: 95;
+
+  height: 700px;
+  width: 550px;
+  border: 2px solid #000;
+  margin: 15px;
+  padding: 10px;
+  background-color: #fff;
+  font-family: comfortaa;
+  font-size: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  div{
+    margin-block-start: 15px;
+    margin-block-end: 15px;
+  }
+
+  background-image: url(../../img/header/modal-barber.jpg);
+}
+
+.modal__title{
+  font-size: 2rem;
+  padding: 15px;
+  color: #896322;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.modal__name-lab {
+  color: #d6a354;
+}
+
+.input {
+  border: 2px solid #000;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.modal__phone-lab {
+  color: #d6a354;
+}
+
+.modal__date {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__date-lab {
+  color: #d6a354;
+}
+
+.modal__date-input {
+  justify-self: center;
+}
+
+.modal__time {
+  display: flex;
+  flex-direction: column;
+}
+.modal__time-lab {
+  color: #d6a354;
+}
+
+.modal__button {
+  cursor: pointer;
+  align-self: center;
+}
+

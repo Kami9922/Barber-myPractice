@@ -7,7 +7,13 @@ function init() {
 
   var myPlacemark = new ymaps.Placemark(
     [53.21249544520122, 50.181650467999276],
-    {},
+    {
+      balloonContent: `
+				<div class="balloon">
+					<div class="balloon__address">Московское шоссе, 15Б</div>
+				</div>
+			`,
+    },
     {
       iconLayout: 'default#image',
       iconImageHref: '../../img/map/location-pin.svg',
