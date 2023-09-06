@@ -37,6 +37,13 @@
   }
 
   background-image: url(../../img/header/modal-barber.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include mediaPhone {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .modal__title{
@@ -52,7 +59,7 @@
 }
 
 .modal__name-lab {
-  color: #d6a354;
+  color: $brown-light;
 }
 
 .input {
@@ -67,28 +74,24 @@
 }
 
 .modal__phone-lab {
-  color: #d6a354;
+  color: $brown-light;
 }
 
-.modal__date {
+.modal__date, .modal__time {
   display: flex;
   flex-direction: column;
 }
 
 .modal__date-lab {
-  color: #d6a354;
+  color: $brown-light;
 }
 
 .modal__date-input {
   justify-self: center;
 }
 
-.modal__time {
-  display: flex;
-  flex-direction: column;
-}
 .modal__time-lab {
-  color: #d6a354;
+  color: $brown-light;
 }
 
 .modal__button {

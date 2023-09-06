@@ -2,11 +2,11 @@
 .mobile-nav-btn {
 	--time: 0.1s;
 
-	--width: 40px;
+	--width: 60px;
 	--height: 30px;
 
-	--line-height: 4px;
-	--spacing: 6px;
+	--line-height: 6px;
+	--spacing: 15px;
 
 	--color: #000;
 	--radius: 4px;
@@ -18,10 +18,13 @@
 	/* Dynamic height and width */
 	height: calc(var(--line-height) * 3 + var(--spacing) * 2);
 	width: var(--width);
-
-	display: flex;
+  
+	display: none;
 	justify-content: center;
 	align-items: center;
+	@include mediaTablet {
+		display: flex;
+	}
 }
 
 .nav-icon {
@@ -82,7 +85,9 @@
 
 .mobile-nav-btn {
 	z-index: 999;
-	// display: none;
+	position: absolute;
+  top: 50px;
+	right: 10px;
 }
 
 // @media (max-width: 1000px) {

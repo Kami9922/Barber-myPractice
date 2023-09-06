@@ -1,7 +1,7 @@
 .description__body {
 	display: grid;
   grid-template-columns: 450px 1fr 1fr ;
-  grid-template-rows: 400px 300px;
+  grid-template-rows: 465px 235px;
   position: relative;
   margin-bottom: 75px;
 
@@ -11,11 +11,15 @@
 	background-size: 1000px;
   
   font-family: Comfortaa;
+  @include mediaLaptop {
+  }
 }
 
 .description__text-part {
   display: flex;
   grid-column: 1/4;
+  @include mediaLaptop {
+  }
 }
 
 .description__img {
@@ -45,13 +49,20 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
-  color: #9b5b11;
+  color: $brown;
   padding-bottom: 20px;
-  line-height: 1.6;
+  line-height: 2;
+  @include mediaLaptop {
+    line-height: 1.6;
+  }
 }
 
 .description__main-text {
-  line-height: 1.6;
+  line-height: 2.1;
+  @include mediaLaptop {
+    line-height: 1.6;
+    font-size: 14px;
+  }
 }
 
 .description__items {
@@ -60,6 +71,9 @@
   grid-row: 2/3;
   align-items: center;
   gap: 10px;
+  @include mediaLaptop {
+    align-items: end;
+  }
 }
 
 .description__item-img {
@@ -71,10 +85,13 @@
 .description__item {
   flex-basis: 33%;
   text-align: center;
-
+  height: 200px;
 }
 
 .description__item-text {
   font-weight: 700;
   padding: 20px;
+  @include mediaLaptop {
+    font-size: 12px; 
+  }
 }

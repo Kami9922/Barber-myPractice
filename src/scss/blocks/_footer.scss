@@ -22,7 +22,7 @@
 }
 
 .footer__text-yellow {
-  color: #d6a354;
+  color: $brown-light;
   font-size: 1.25rem;
   line-height: 1.5;
 }
@@ -68,11 +68,11 @@
 }
 
 .footer__menu-link:hover,.footer__services-link:hover,.footer__info-link:hover {
-  color: #d6a354;
+  color: $brown-light;
 }
 
 .footer__menu-item:nth-child(1),.footer__info-item:nth-child(1),.footer__services-item:nth-child(1) {
-  color: #d6a354;
+  color: $brown-light;
   font-size: 1.85rem;
   cursor: default ;
 }

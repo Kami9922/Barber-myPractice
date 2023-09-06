@@ -44,7 +44,7 @@
 }
 
 .services__subtitle {
-  color: #d6a354;
+  color: $brown-light;
   font-size: 2em;
 }
 
@@ -171,13 +171,13 @@ strong {
 .services__tab-title {
   font-weight: 700;
   font-size: 2.5rem;
-  color: #896322;
+  color: $brown;
   display: inline-block;
   text-transform: uppercase;
 }
 
 .services__tab-subtitle {
-  color: #d6a354;
+  color: $brown-light;
   line-height: 1.5;
   font-weight: 700;
   font-family: comfortaa;
@@ -198,7 +198,7 @@ strong {
 }
 
 .services__tab-littletext {
-  color: #896322;
+  color: $brown;
   font-weight: 700;
   font-size: 1.4rem;
 }

@@ -1,8 +1,8 @@
 .menu {
   background-image: url('../../img/header/header-img-ghost2.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 1500px ;
+  background-position: left;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -10,12 +10,45 @@
   font-family: Rex;
   text-transform: uppercase;
   border-bottom: 2px solid #000;
+  position: relative;
+    &:after{
+      content: "";
+      background-image: url(../../img/header/header-after.png);
+      position: absolute;
+      z-index: 15;
+      height: 100%;
+      width: 25px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      top: 0px;
+      right: -7px;
+    }
+    &:before{
+      content: "";
+      background-image: url(../../img/header/header-before.png);
+      position: absolute;
+      z-index: 15;
+      height: 100%;
+      width: 25px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      top: 0px;
+      left: -7px;
+      
+    }
+  
+  @include mediaTablet {
+    background-image: url(../../img/header/header-img-ghost-mobile.jpg);
+    background-position: center;
+    background-size: 900px;
+  }
 }
 
 .logo {
   width: 150px;
   height: 100px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .menu__nav {
@@ -30,6 +63,28 @@
   gap: 50px;
   margin-left: 50px;
   font-weight: 700;
+
+  @include mediaLaptop {
+    font-size: .9rem;  
+  }
+
+  @include mediaTablet {
+    display: none;
+  }
+}
+
+.menu__list--active {
+  display: flex;
+  flex-direction: column;
+  background-color: $brown-light;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 200;
+  margin: 0;
+  justify-content: center;
 }
 
 .menu__list-item {
@@ -49,6 +104,6 @@
 
 .menu__reception {
   text-align: center;
-  margin-bottom: 100px;
 }
+
 

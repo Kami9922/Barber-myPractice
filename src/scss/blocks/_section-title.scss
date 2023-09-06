@@ -1,7 +1,7 @@
 .section-title {
   font-family: 'Rex';
   position: relative;
-  background-color: #d6a354;
+  background-color: $brown-light;
   display: block;
   padding: 20px 40px;
   z-index: 10;
@@ -12,7 +12,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  text-shadow: -4px 2px 0px #896322;
+  text-shadow: -4px 2px 0px $brown;
   box-shadow: -5px 10px 15px 0 rgba(0, 0, 0, 0.25);
     &.about {
       top: 100px;

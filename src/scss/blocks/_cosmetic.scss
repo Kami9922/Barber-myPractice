@@ -30,7 +30,7 @@
 .cosmetic__text-subtitle {
   font-size: 1.25rem;
   padding: 15px;
-  color: #d6a354;
+  color: $brown-light;
 }
 
 .cosmetic__text-main {
@@ -49,3 +49,37 @@
 .cosmetic__buttonbox {
   margin-bottom: 75px;
 }
+
+@media (width: 1250px) {
+  .cosmetic__text {
+    max-width: 520px;
+    color: #fff;
+    padding: 25px 25px 25px 25px;
+    margin: 0 auto;
+  }
+  
+  .cosmetic__text-title {
+    font-size: 2rem;
+    padding: 15px;
+  }
+  
+  .cosmetic__text-subtitle {
+    font-size: 1.25rem;
+    padding: 15px;
+    color: $brown-light;
+  }
+  
+  .cosmetic__text-main {
+    font-size: 1.15rem;
+    font-family: Comfortaa;
+    padding: 15px;
+  }
+
+  .cosmetic__img {
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+    width: 450px;
+  }
+}
+
