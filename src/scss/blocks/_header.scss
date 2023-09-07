@@ -13,7 +13,7 @@
   position: relative;
     &:after{
       content: "";
-      background-image: url(../../img/header/header-after.png);
+      background-image: url(../../img/effects/after.png);
       position: absolute;
       z-index: 15;
       height: 100%;
@@ -25,7 +25,7 @@
     }
     &:before{
       content: "";
-      background-image: url(../../img/header/header-before.png);
+      background-image: url(../../img/effects/before.png);
       position: absolute;
       z-index: 15;
       height: 100%;
@@ -64,7 +64,7 @@
   margin-left: 50px;
   font-weight: 700;
 
-  @include mediaLaptop {
+  @include mediaLaptopLess {
     font-size: .9rem;  
   }
 

@@ -11,14 +11,43 @@
 	background-size: 1000px;
   
   font-family: Comfortaa;
-  @include mediaLaptop {
+
+  @include mediaTablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 200px;
+    background-position: bottom left;
+    &:after{
+      content: "";
+      background-image: url(../../img/effects/after.png);
+      position: absolute;
+      z-index: 15;
+      height: 100%;
+      width: 25px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      bottom: -300px;
+      right: -7px;
+    }
+  }
+  @include mediaTabletLess {
+    background-position: 0px 530px;
+  }
+  @include mediaPhone {
+    background-position: -75px 745px;
+    grid-template-rows: 1fr 335px;
   }
 }
 
 .description__text-part {
   display: flex;
   grid-column: 1/4;
-  @include mediaLaptop {
+
+  @include mediaTablet {
+    display: grid;
+    row-gap: 25px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    padding: 0 15px;
   }
 }
 
@@ -29,14 +58,24 @@
   display: block;
   filter:sepia(0.3);
   border-radius: 5px;
+
+  @include mediaTablet {
+    height: 500px;
+  }
 }
 
 .description__text {
   padding-left: 30px ;
+  @include mediaTablet{
+    padding: 0;
+  }
 }
 
 .description__text-part {
   margin: 0 0 50px 0;
+
+  @include mediaTablet {
+  }
 }
 
 .description__top-title {
@@ -52,14 +91,16 @@
   color: $brown;
   padding-bottom: 20px;
   line-height: 2;
-  @include mediaLaptop {
+
+  @include mediaLaptopLess {
     line-height: 1.6;
   }
 }
 
 .description__main-text {
   line-height: 2.1;
-  @include mediaLaptop {
+
+  @include mediaLaptopLess {
     line-height: 1.6;
     font-size: 14px;
   }
@@ -70,28 +111,47 @@
   grid-column: 2/4;
   grid-row: 2/3;
   align-items: center;
-  gap: 10px;
-  @include mediaLaptop {
+  gap: 25px;
+
+  @include mediaLaptopLess {
     align-items: end;
   }
-}
 
-.description__item-img {
-  height: 70px;
-  width: 70px;
-  
+  @include mediaPhone {
+    flex-direction: column;
+    gap: 0;
+    padding-left: 15px;
+    
+  }
 }
 
 .description__item {
   flex-basis: 33%;
   text-align: center;
   height: 200px;
+
+  @include mediaPhone {
+    display: flex;  
+    height: 70px;
+    align-items: center;
+    margin: 20px 0;
+  }
 }
+
+.description__item-img {
+  width: 70px;
+  height: 70px;
+}
+
 
 .description__item-text {
   font-weight: 700;
   padding: 20px;
-  @include mediaLaptop {
+
+  @include mediaLaptopLess {
     font-size: 12px; 
+  }
+  @include mediaPhone {
+    padding: 0 25px;
   }
 }

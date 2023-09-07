@@ -14,6 +14,14 @@
   color: #fff;
   text-shadow: -4px 2px 0px $brown;
   box-shadow: -5px 10px 15px 0 rgba(0, 0, 0, 0.25);
+
+  @include mediaTablet {
+    max-width: 300px;  
+    padding: 15px 30px;
+    font-size: 2.2rem;
+  }
+
+
     &.about {
       top: 100px;
     }
@@ -39,4 +47,5 @@
   background-position: center center;
   top: 0px;
   right: -30px;
+
 }

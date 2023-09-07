@@ -3,6 +3,11 @@
     @content;
   }
 }
+@mixin mediaLaptopLess {
+  @media screen and (max-width: $laptop-less) {
+    @content;
+  }
+}
 
 @mixin mediaTablet {
   @media screen and (max-width: $tablet) {
