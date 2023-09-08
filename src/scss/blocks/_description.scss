@@ -25,7 +25,7 @@
       width: 25px;
       background-repeat: no-repeat;
       background-position: center center;
-      bottom: -300px;
+      bottom: -100px;
       right: -7px;
     }
   }
@@ -35,6 +35,9 @@
   @include mediaPhone {
     background-position: -75px 745px;
     grid-template-rows: 1fr 335px;
+    &:after{
+      bottom: -200px;
+    }
   }
 }
 

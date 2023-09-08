@@ -8,6 +8,16 @@
   justify-content: space-between;
   position: relative;
   margin-bottom: 40px;
+
+  @include mediaLaptopLess {
+    flex-wrap: wrap;
+    gap: 25px 0px;
+    justify-content: center;
+  }
+
+  @include mediaTabletLess {
+
+  }
 }
 
 .services__main-item {
@@ -18,22 +28,28 @@
   min-height: 300px;
   position: relative;
   border-radius: 5px;
+  
+  @include mediaTabletLess {
+  }
 
     &.hair{
       background-image: url('../../img/services_from_barber/services11.jpg');
       background-repeat: no-repeat;
       background-position: top right -50px;
+      @include mediaPhone {
+        background-position: -175px -30px;
+      }
     }
     &.beard{
       background-image: url('../../img/services_from_barber/services22.jpg');
       background-repeat: no-repeat;
-    
+      @include mediaPhone {
+        background-position: -90px -30px;
+      }
     }
 }
 
 .services__header {
-  // position: absolute;
-  // bottom: 0px;
   text-transform: uppercase;
   width: 100%;
 }
@@ -41,15 +57,27 @@
 .services__main-item-text {
   font-size: 1.75em;
   color: #fff;
+  @include mediaPhone {
+    font-size: 24px;
+  }
 }
 
 .services__subtitle {
   color: $brown-light;
   font-size: 2em;
+  @include mediaTabletLess {
+    font-size: 2em;
+  }
 }
 
 strong {
   font-size: 1.85em;
+  @include mediaTabletLess {
+    font-size: 1.5em;
+  }
+  @include mediaPhone {
+    font-size: 30px;
+  }
 }
 
 .services__items-banner {
@@ -64,9 +92,13 @@ strong {
 .services__box {
   display: flex;
   align-items: flex-end;
-  gap: 0 70px;
   padding: 25px;
   width: 100%;
+  @include mediaPhone {
+    flex-wrap: wrap;
+    align-content: flex-end;
+    gap: 25px 0px;
+  }
 }
 
 .services__secondary-items{
@@ -77,6 +109,24 @@ strong {
   display: flex;
   justify-content: space-between;
   margin-bottom: 55px;
+
+  @include mediaLaptopLess {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: center;
+    justify-items: center;
+    gap: 30px;
+  }
+  @include mediaTablet {
+    grid-template-columns: 40% 40%;
+  }
+  @include mediaTabletLess {
+    grid-template-columns: 50% 50%;
+  }
+  @include mediaPhone {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
 }
 
 .services__secondary-item {
@@ -107,6 +157,9 @@ strong {
       background-position: bottom right ;
       background-size: contain ;
     }
+    @include mediaLaptopLess {
+      align-items: center;
+    }
 }
 
 .services__secondary-title {
@@ -116,6 +169,7 @@ strong {
 
 .services__secondary-button {
   align-self: flex-end;
+  
   &.locked:after {
     content: '';
     width: 40px;
@@ -126,10 +180,18 @@ strong {
     top: 0px;
     right: 0px;
   }
+  @include mediaLaptopLess{
+  }
 }
 
 .services__item-tab {
   display: flex;
+  @include mediaLaptopLess {
+    flex-wrap: wrap;
+  }
+  @include mediaTablet {
+    justify-content: center;
+  }
 }
 
 .services__main-tab {
@@ -140,11 +202,29 @@ strong {
   border: 2px solid black;
   border-radius: 10px;
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, .5);
+  @include mediaPhone {
+    p {
+      margin-block-start: .75em;
+      margin-block-end: .75em;
+    }
+  }
 }
 
 .services__tab-img {
   width: 500px;
   border-radius: 5px;
+  @include mediaLaptopLess {
+    height: 500px;
+    width: auto;
+    margin: 30px;
+  }
+  
+  @include mediaTablet {
+    height: 400px;
+  }
+  @include mediaPhone {
+    height: 250px;
+  }
 }
 
 .services__tab-imges {
@@ -161,11 +241,34 @@ strong {
   position: absolute;
   top: 350px;
   left: -30px;
+
+  @include mediaLaptopLess {
+    top: 140px;
+    left: 340px;
+  }
+  @include mediaTablet {
+    background-size: 500px 400px;
+    top: 90px;
+    left: 25px;
+  }
+  @include mediaTabletLess {
+    top: 115px;
+    left: 10px;
+    background-size: 475px 350px;
+  }
+  @include mediaPhone {
+    top: 110px;
+    left: 20px;
+    background-size: 300px 220px;
+  }
 }
 
 .services__tab-textpart {
   padding: 10px 25px;
-  
+
+  @include mediaPhone {
+    padding: 15px 15px;
+  }
 }
 
 .services__tab-title {
@@ -174,6 +277,9 @@ strong {
   color: $brown;
   display: inline-block;
   text-transform: uppercase;
+  @include mediaPhone {
+    font-size: 24px;
+  }
 }
 
 .services__tab-subtitle {
@@ -181,32 +287,53 @@ strong {
   line-height: 1.5;
   font-weight: 700;
   font-family: comfortaa;
-  margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: .05rem;
+
+  @include mediaPhone {
+    font-size: 14px;
+    line-height: 1.2;
+  }
 }
 
 .services__tab-text {
   font-weight: 700;
   line-height: 1.5;
   font-family: comfortaa;
+  @include mediaPhone {
+    font-size: 14px;
+    
+  }
 }
 
 .services__tab-cost {
   font-size: 1.5rem;
   font-weight: 700;
+
+  @include mediaPhone {
+    font-size: 1.2rem;
+  }
 }
 
 .services__tab-littletext {
   color: $brown;
   font-weight: 700;
   font-size: 1.4rem;
+  
+  @include mediaPhone {
+    font-size: 1.2rem;
+  }
 }
 
 .services__tab-stages {
-  padding: 10px 15px 10px 15px;
+  padding: 16px 15px 0px 15px;
   line-height: 1.5;
   font-weight: 700;
   font-size: 1.3rem;
+
+  @include mediaPhone {
+    padding: 10px 5px 0px 5px;
+    font-size: 1.1rem;
+  }
 }
 

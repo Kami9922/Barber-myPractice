@@ -30,6 +30,11 @@
       background-color: $brown-light;
       color: #fff;
     }
+
+    @include mediaTabletLess {
+      padding: 0 10px;
+    }
+    
   }
   
   .button-ghost {
@@ -41,6 +46,7 @@
     color: #000;
     border: 2px solid #000;
     background-color: transparent;
+    
   }
   
   .button-ghost--modal {
@@ -53,6 +59,7 @@
   color: #fff;
 }
 
+
 .button-ghost--big {
   border-radius: 30px;
   line-height: 55px;
@@ -63,4 +70,9 @@
 
 .button-locked{
   border: 2px solid $brown-light;
+  
+}
+
+.button--content-box {
+  box-sizing: content-box;
 }
