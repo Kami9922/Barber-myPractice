@@ -13,30 +13,71 @@
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
+
+
+  @include mediaTablet {
+    align-items: flex-start;
+  }
+
+  @include mediaPhoneLess {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .cosmetic__text {
   max-width: 520px;
   color: #fff;
   padding: 75px 75px 25px 75px;
-  margin: 0 auto;
+
+  @include mediaLaptopLess {
+    padding: 100px 25px 25px 5px;
+    
+    max-width: 450px;
+  }
+  
+  @include mediaPhoneLess {
+    padding: 100px 5px 5px 5px;
+  }
 }
 
 .cosmetic__text-title {
   font-size: 2rem;
   padding: 15px;
+
+  @include mediaLaptopLess {
+  }
+
+  @include mediaTablet {
+    font-size: 1.5rem;
+  }
 }
 
 .cosmetic__text-subtitle {
   font-size: 1.25rem;
   padding: 15px;
   color: $brown-light;
+
+  @include mediaLaptopLess {
+  }
+
+  @include mediaTablet {
+    font-size: 1.1rem;
+    padding: 0px 15px;
+  }
 }
 
 .cosmetic__text-main {
   font-size: 1.15rem;
   font-family: Comfortaa;
   padding: 15px;
+
+  @include mediaLaptopLess {
+  }
+
+  @include mediaTablet {
+    font-size: .8rem;
+  }
 }
 
 .cosmetic__img {
@@ -44,42 +85,35 @@
   bottom: -20px;
   right: 0px;
   width: 450px;
+
+  @include mediaLaptopLess {
+    width: 300px;
+  }
+
+  @include mediaTabletLess {
+    width: 350px;
+    position: inherit;
+    align-self: flex-end;
+  }
+  @include mediaPhoneLess {
+    width: 300px;
+    align-self: auto;
+  }
+
 }
 
 .cosmetic__buttonbox {
   margin-bottom: 75px;
-}
 
-@media (width: 1250px) {
-  .cosmetic__text {
-    max-width: 520px;
-    color: #fff;
-    padding: 25px 25px 25px 25px;
-    margin: 0 auto;
+  @include mediaTablet {
+    padding-left: 20px;
+    margin-bottom: 50px;
+  }
+  @include mediaPhone {
+    margin-bottom: 15px;
   }
   
-  .cosmetic__text-title {
-    font-size: 2rem;
-    padding: 15px;
-  }
-  
-  .cosmetic__text-subtitle {
-    font-size: 1.25rem;
-    padding: 15px;
-    color: $brown-light;
-  }
-  
-  .cosmetic__text-main {
-    font-size: 1.15rem;
-    font-family: Comfortaa;
-    padding: 15px;
-  }
-
-  .cosmetic__img {
-    position: absolute;
-    bottom: -20px;
-    right: 0px;
-    width: 450px;
-  }
 }
+  
+  
 
