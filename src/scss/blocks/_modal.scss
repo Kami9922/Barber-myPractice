@@ -15,6 +15,7 @@
   height: 700px;
   width: 550px;
   border: 2px solid #000;
+  border-radius: 5px;
   margin: 15px;
   padding: 10px;
   background-color: #fff;
@@ -35,10 +36,8 @@
     margin-block-start: 15px;
     margin-block-end: 15px;
   }
-
-  background-image: url(../../img/header/modal-barber.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  
+  background-color: #ffffff;
 
   @include mediaPhone {
     width: 100%;
