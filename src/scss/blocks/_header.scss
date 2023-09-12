@@ -1,9 +1,8 @@
 .menu {
   background-image: url('../../img/header/header-img-ghost2.jpg');
   background-repeat: no-repeat;
-  background-size: 1500px ;
   background-position: left;
-  height: 50vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,13 +33,12 @@
       background-position: center center;
       top: 0px;
       left: -7px;
-      
     }
+  
   
   @include mediaTablet {
     background-image: url(../../img/header/header-img-ghost-mobile.jpg);
     background-position: center;
-    background-size: 900px;
   }
 }
 
@@ -48,7 +46,9 @@
   width: 150px;
   height: 100px;
   cursor: pointer;
-  margin-left: 10px;
+  &.header__logo {
+    padding-left: 10px;
+  }
 }
 
 .menu__nav {
@@ -66,6 +66,7 @@
 
   @include mediaLaptopLess {
     font-size: .9rem;  
+    gap: 30px;
   }
 
   @include mediaTablet {
@@ -92,7 +93,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration:underline;
   font-size: 2em;
   transition: all .25s ease-in;
   color: #000;
