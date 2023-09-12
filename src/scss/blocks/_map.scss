@@ -6,6 +6,10 @@
 
 .sec-map__body {
   margin-bottom: 75px;
+  
+  @include mediaPhone {
+    margin-bottom: 25px;
+  } 
 }
 
 

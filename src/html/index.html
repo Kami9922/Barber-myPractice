@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barber</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon_io/site.webmanifest" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -13,17 +31,11 @@
       <main class="main">
         @@include('blocks/description.html') @@include('blocks/services.html')
         @@include('blocks/cosmetic.html') @@include('blocks/map.html')
+        @@include('blocks/return-button.html')
       </main>
       @@include('blocks/footer.html')
     </div>
-
-    <div class="online" data-modal-button>
-      <div class="online__container">
-        <span class="online__title">Онлайн Запись </span>
-        <span class="online__subtitle">Barber</span>
-      </div>
-      <div class="online__wave"></div>
-    </div>
+    @@include('blocks/online-button.html')
 
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=59c3afb7-f00a-4a50-8605-3e5b9ffb3af3&lang=ru_RU"

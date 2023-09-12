@@ -1,5 +1,9 @@
 .services__body {
   margin-bottom: 75px;
+  
+  @include mediaPhone {
+    margin-bottom: 25px;
+  } 
 }
 
 .services__main-items {
@@ -14,10 +18,6 @@
     gap: 25px 0px;
     justify-content: center;
   }
-
-  @include mediaTabletLess {
-
-  }
 }
 
 .services__main-item {
@@ -28,9 +28,6 @@
   min-height: 300px;
   position: relative;
   border-radius: 5px;
-  
-  @include mediaTabletLess {
-  }
 
     &.hair{
       background-image: url('../../img/services_from_barber/services11.jpg');
@@ -47,6 +44,7 @@
         background-position: -90px -30px;
       }
     }
+   
 }
 
 .services__header {
@@ -57,6 +55,7 @@
 .services__main-item-text {
   font-size: 1.75em;
   color: #fff;
+
   @include mediaPhone {
     font-size: 24px;
   }
@@ -65,6 +64,7 @@
 .services__subtitle {
   color: $brown-light;
   font-size: 2em;
+
   @include mediaTabletLess {
     font-size: 2em;
   }
@@ -72,6 +72,7 @@
 
 strong {
   font-size: 1.85em;
+
   @include mediaTabletLess {
     font-size: 1.5em;
   }
@@ -94,6 +95,7 @@ strong {
   align-items: flex-end;
   padding: 25px;
   width: 100%;
+
   @include mediaPhone {
     flex-wrap: wrap;
     align-content: flex-end;
@@ -126,6 +128,7 @@ strong {
   @include mediaPhone {
     grid-template-columns: 1fr;
     gap: 25px;
+    margin-bottom: 30px;
   }
 }
 
@@ -157,6 +160,7 @@ strong {
       background-position: bottom right ;
       background-size: contain ;
     }
+
     @include mediaLaptopLess {
       align-items: center;
     }
@@ -180,12 +184,14 @@ strong {
     top: 0px;
     right: 0px;
   }
+
   @include mediaLaptopLess{
   }
 }
 
 .services__item-tab {
   display: flex;
+
   @include mediaLaptopLess {
     flex-wrap: wrap;
   }
@@ -202,6 +208,7 @@ strong {
   border: 2px solid black;
   border-radius: 10px;
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, .5);
+
   @include mediaPhone {
     p {
       margin-block-start: .75em;
@@ -213,12 +220,12 @@ strong {
 .services__tab-img {
   width: 500px;
   border-radius: 5px;
+
   @include mediaLaptopLess {
     height: 500px;
     width: auto;
     margin: 30px;
   }
-  
   @include mediaTablet {
     height: 400px;
   }
@@ -277,6 +284,7 @@ strong {
   color: $brown;
   display: inline-block;
   text-transform: uppercase;
+
   @include mediaPhone {
     font-size: 24px;
   }
@@ -300,6 +308,7 @@ strong {
   font-weight: 700;
   line-height: 1.5;
   font-family: comfortaa;
+  
   @include mediaPhone {
     font-size: 14px;
     

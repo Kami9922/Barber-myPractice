@@ -10,6 +10,10 @@
   display: flex;
   z-index: 100;
   cursor: pointer;
+
+  @include mediaTablet {
+    display: none;
+  }
 }
 
 .online__container {

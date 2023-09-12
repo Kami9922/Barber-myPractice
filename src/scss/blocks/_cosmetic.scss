@@ -1,5 +1,9 @@
 .cosmetic__inner {
   margin-bottom: 75px;
+
+  @include mediaPhone {
+    margin-bottom: 25px;
+  } 
 }
 
 .cosmetic__body {
@@ -14,11 +18,9 @@
   align-items: center;
   border-radius: 5px;
 
-
   @include mediaTablet {
     align-items: flex-start;
   }
-
   @include mediaPhoneLess {
     align-items: center;
     text-align: center;
@@ -32,10 +34,8 @@
 
   @include mediaLaptopLess {
     padding: 100px 25px 25px 5px;
-    
     max-width: 450px;
   }
-  
   @include mediaPhoneLess {
     padding: 100px 5px 5px 5px;
   }
@@ -47,7 +47,6 @@
 
   @include mediaLaptopLess {
   }
-
   @include mediaTablet {
     font-size: 1.5rem;
   }
@@ -60,7 +59,6 @@
 
   @include mediaLaptopLess {
   }
-
   @include mediaTablet {
     font-size: 1.1rem;
     padding: 0px 15px;
@@ -71,9 +69,6 @@
   font-size: 1.15rem;
   font-family: Comfortaa;
   padding: 15px;
-
-  @include mediaLaptopLess {
-  }
 
   @include mediaTablet {
     font-size: .8rem;
@@ -89,7 +84,6 @@
   @include mediaLaptopLess {
     width: 300px;
   }
-
   @include mediaTabletLess {
     width: 350px;
     position: inherit;
@@ -112,7 +106,6 @@
   @include mediaPhone {
     margin-bottom: 15px;
   }
-  
 }
   
   
